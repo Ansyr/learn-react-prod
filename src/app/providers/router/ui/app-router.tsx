@@ -1,7 +1,5 @@
 import React, {Suspense} from 'react';
 import {Route, Routes} from "react-router-dom";
-import AboutPage from "@/pages/about-page/ui/about-page";
-import MainPage from "@/pages/main-page/ui/main-page";
 import {routeConfig} from "@/shared/config/route-config/route-config";
 
 const AppRouter = () => {

@@ -10,13 +10,13 @@ export function buildLoaders({isDev}: BuildOptions): webpack.RuleSetRule[] {
     }
 
     const fileLoader = {
-            test: /\.(png|jpe?g|gif|woff2)$/i,
-            use: [
-                {
-                    loader: 'file-loader',
-                },
-            ],
-        }
+        test: /\.(png|jpe?g|gif|woff2)$/i,
+        use: [
+            {
+                loader: 'file-loader',
+            },
+        ],
+    }
 
     const cssLoader = {
         test: /\.s[ac]ss$/i,

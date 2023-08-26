@@ -1,7 +1,6 @@
 import React from 'react';
 import {classNames} from "@/shared/lib/class-names/class-names";
 import styles from "./styles.module.scss"
-import ThemeSwitcher from "@/shared/ui/theme-switcher/ui/theme-switcher";
 import AppLink from "@/shared/ui/app-link/AppLink";
 
 interface NavbarProps{
