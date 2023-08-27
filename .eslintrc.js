@@ -37,7 +37,8 @@ module.exports = {
         "import/no-unresolved": 'off',
         "indent": [2,4],
         "no-unused-vars": 'warn',
-        "i18next/no-literal-string": ['error',{markupOnly: true}]
+        "i18next/no-literal-string": ['error',{markupOnly: true}],
+        "max-len":['error',100,{ignoreComments: true}],
     },
     globals: {
         '__IS_DEV__': true

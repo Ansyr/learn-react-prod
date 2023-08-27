@@ -2,5 +2,7 @@
   "Тестовый пример": "Test example",
   "Перевод": "Translate",
   "Главная страница": "Main page",
-  "Язык": "Language"
+  "Язык": "Language",
+  "Страница не найдена": "Page not found",
+  "loading": "loading"
 }
