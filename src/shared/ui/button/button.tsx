@@ -1,6 +1,6 @@
-import {classNames} from "@/shared/lib/class-names/class-names";
 import styles from "./styles.module.scss"
 import {ButtonHTMLAttributes, ReactNode} from "react";
+import {classNames} from "@/shared/lib/class-names/class-names";
 
 
 type ThemeButton = 'clear'

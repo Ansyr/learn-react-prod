@@ -4,14 +4,13 @@
  */
 
 import type {Config} from 'jest';
+import path from "path";
 
 const config: Config = {
     clearMocks: true,
-    coveragePathIgnorePatterns: [
-        "/node_modules/"
-    ],
+    coveragePathIgnorePatterns: ["\\\\node_modules\\\\"],
     moduleDirectories: [
-        "node_modules"
+        "node_modules","shared"
     ],
 
     // An array of file extensions your modules use
@@ -30,6 +29,20 @@ const config: Config = {
     testMatch: [
         '<rootDir>src/**/*(*.)@(spec|test).[tj]s?(x)'
     ],
+    moduleNameMapper: {
+        '\\.s?css$': 'identity-obj-proxy',
+        "^@/(.*)$": "<rootDir>/src/$1",
+        '^.+\\.svg$': path.resolve(__dirname,'jest-empty-component.tsx'),
+    },
+    modulePaths: [
+        "<rootDir>src"
+    ],
+    setupFilesAfterEnv:[
+        "<rootDir>config/jest/setup-test.ts"
+    ],
+    transform: {
+        ".[jt]sx?$": "babel-jest"
+    },
     // All imported modules in your tests should be mocked automatically
     // automock: false,
 

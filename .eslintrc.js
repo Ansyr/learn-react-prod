@@ -15,8 +15,12 @@ module.exports = {
                 "node": true
             },
             files: [
-                ".eslintrc.{js,cjs}"
+                ".eslintrc.{js,cjs}",
+                '**/src/**/*.test.{ts,tsx}'
             ],
+            rules: {
+                "i18next/no-literal-string": "off"
+            },
             parserOptions: {
                 "sourceType": "script"
             }
@@ -38,9 +42,10 @@ module.exports = {
         "indent": [2,4],
         "no-unused-vars": 'warn',
         "i18next/no-literal-string": ['error',{markupOnly: true}],
-        "max-len":['error',100,{ignoreComments: true}],
+        "max-len":['error',150,{ignoreComments: true}],
     },
     globals: {
         '__IS_DEV__': true
-    }
+    },
 }
+
