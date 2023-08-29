@@ -1,9 +1,9 @@
-import React, {Suspense, useEffect} from 'react';
+import React, {Suspense} from 'react';
 import "./styles/index.scss"
 import {useTheme} from "@/shared/lib/use-theme/useTheme";
 import {classNames} from "@/shared/lib/class-names/class-names";
 import AppRouter from "@/app/providers/router/ui/app-router";
-import Navbar from "@/widget/navbar/navbar";
+import Navbar from "@/widget/navbar/ui/navbar";
 import Sidebar from "@/widget/sidebar/ui/sidabar/sidebar";
 
 

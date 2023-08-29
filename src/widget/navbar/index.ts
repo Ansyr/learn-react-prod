@@ -1,1 +1,1 @@
-export * as Navbar from "./navbar"
+export * as Navbar from "./ui/navbar"

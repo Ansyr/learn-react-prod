@@ -6,7 +6,7 @@ module.exports = {
     },
     extends: [
         "eslint:recommended",
-        'plugin:@typescript-eslint/recommended',
+        "plugin:@typescript-eslint/recommended",
         "plugin:i18next/recommended"
     ],
     overrides: [
@@ -41,7 +41,7 @@ module.exports = {
         "import/no-unresolved": 'off',
         "indent": [2,4],
         "no-unused-vars": 'warn',
-        "i18next/no-literal-string": ['error',{markupOnly: true}],
+        "i18next/no-literal-string": ['error',{markupOnly: true, ignoreAttribute:['data-testid','to']}],
         "max-len":['error',150,{ignoreComments: true}],
     },
     globals: {

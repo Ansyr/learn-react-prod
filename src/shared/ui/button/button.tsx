@@ -3,7 +3,7 @@ import {ButtonHTMLAttributes, ReactNode} from "react";
 import {classNames} from "@/shared/lib/class-names/class-names";
 
 
-type ThemeButton = 'clear'
+type ThemeButton = 'clear' | 'outline'
 interface buttonProps extends ButtonHTMLAttributes<HTMLButtonElement>{
     theme?:ThemeButton
     className?:string
