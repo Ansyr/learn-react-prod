@@ -1,7 +1,7 @@
 import {classNames} from "@/shared/lib/class-names/class-names";
 import styles from "./styles.module.scss"
 import {useState} from "react";
-import ThemeSwitcher from "@/shared/ui/theme-switcher/ui/theme-switcher";
+import ThemeSwitcher from "@/shared/ui/theme-switcher/theme-switcher";
 import LangSwitcher from "@/shared/ui/lang-switcher/lang-switcher";
 import {useTranslation} from "react-i18next";
 import Button from "@/shared/ui/button/button";
@@ -20,11 +20,13 @@ const sidebar = (props: sidebarProps) => {
         setCollapsed(prev => !prev)
     }
     return (
-        <div data-testid={'sidebar'} 
+        <div data-testid={'sidebar'}
             className={classNames(styles.Sidebar,
                 {[styles.collapsed]: collapsed},
                 [className])}>
-            <Button data-testid={"sidebar-toggle"} onClick={onToggle}>{t('toggle')}</Button>
+            <Button
+                data-testid={"sidebar-toggle"}
+                onClick={onToggle}>{t('toggle')}</Button>
             <div className={styles.switcher}>
                 <ThemeSwitcher/>
                 <LangSwitcher className={styles.langSwitch}/>
