@@ -1,7 +1,6 @@
 import {classNames} from "@/shared/lib/class-names/class-names";
 import styles from "./styles.module.scss"
 import {useTranslation} from "react-i18next";
-import PageLoader from "@/shared/ui/page-loader/page-loader";
 
 interface NotFoundPageProps{
     className?:string
