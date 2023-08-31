@@ -15,7 +15,6 @@
     "test:unit": "jest --config config/jest/jest.config.ts",
     "test:ui:ok": "npx loki approve",
     "test:ui": "npx chromatic --project-token=chpt_cb97aa9dd4cd616",
-    "test:ui:ci": "chromatic --exit-zero-on-changes",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "build-storybook": "storybook build -c ./config/storybook"
   },
