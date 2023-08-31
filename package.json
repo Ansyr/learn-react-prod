@@ -17,7 +17,7 @@
     "test:ui": "npx chromatic --project-token=chpt_cb97aa9dd4cd616",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "build-storybook": "storybook build -c ./config/storybook",
-    "chromatik": "chromatic --project-token chpt_cb97aa9dd4cd616"
+    "chromatic:ci": "chromatic --project-token chpt_cb97aa9dd4cd616"
   },
   "keywords": [],
   "author": "",
