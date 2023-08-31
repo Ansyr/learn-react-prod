@@ -4,7 +4,7 @@ import ThemeProvider from "@/app/providers/theme-provider/ui/ThemeProvider";
 
 export const themeDecoratator = (theme: Theme = Theme.LIGHT) => (StoryComponent: Story) => {
     return <ThemeProvider>
-        <div className={`${theme}`}>
+        <div className={`app ${theme}`}>
             <StoryComponent/>
         </div>
     </ThemeProvider>
