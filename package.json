@@ -13,7 +13,7 @@
     "lint:scss": "npx stylelint \"**/*.scss\"",
     "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
     "test:unit": "jest --config config/jest/jest.config.ts",
-    "test:ui:ok": "npx loki approve",
+    "test:ui:ok": "npx chromatic --project-token chpt_cb97aa9dd4cd616 --auto-accept-changes",
     "test:ui": "npx chromatic --project-token=chpt_cb97aa9dd4cd616",
     "storybook": "storybook dev -p 6006 -c ./config/storybook",
     "build-storybook": "storybook build -c ./config/storybook",
