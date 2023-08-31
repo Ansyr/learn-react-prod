@@ -51,3 +51,6 @@ jobs:
       - name: build storybook
         run: npm run build-storybook
 
+      - name: Publish to Chromatic
+        # Chromatic GitHub Action options
+        run: npm run chromatic:ci
