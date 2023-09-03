@@ -7,7 +7,6 @@ type AppLinkTheme  = 'primary' | 'secondary'
 
 interface AppLinkProps {
     theme?: AppLinkTheme
-
     className?: string
     children?: ReactNode
     to: string
