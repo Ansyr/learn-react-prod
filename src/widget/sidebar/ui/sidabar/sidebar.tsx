@@ -15,9 +15,9 @@ interface sidebarProps {
     className?: string,
 }
 
-const sidebar = (props: sidebarProps) => {
+const Sidebar = (props: sidebarProps) => {
     const {className} = props
-    const [collapsed, setCollapsed] = useState(false)
+    const [collapsed, setCollapsed] =  useState(false)
     const {t} = useTranslation()
     const onToggle = () => {
         setCollapsed(prev => !prev)
@@ -70,4 +70,4 @@ const sidebar = (props: sidebarProps) => {
     );
 };
 
-export default sidebar;
+export default Sidebar;
