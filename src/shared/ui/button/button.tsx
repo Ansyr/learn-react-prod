@@ -3,7 +3,7 @@ import {ButtonHTMLAttributes, ReactNode} from "react";
 import {classNames} from "@/shared/lib/class-names/class-names";
 
 
-type ThemeButton = 'clear' | 'outline' | 'background' | 'invertedBackground'
+type ThemeButton = 'clear' | 'outline' | 'background' | 'invertedBackground' | 'clearInverted'
 
 type SizeButton = 'M' | 'L' | 'XL'
 

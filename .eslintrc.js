@@ -7,7 +7,8 @@ module.exports = {
     extends: [
         "eslint:recommended",
         'plugin:@typescript-eslint/recommended',
-        "plugin:i18next/recommended"
+        "plugin:i18next/recommended",
+        "plugin:react-hooks/recommended"
     ],
     overrides: [
         {
@@ -33,7 +34,8 @@ module.exports = {
     plugins: [
         "react",
         "@typescript-eslint",
-        "i18next"
+        "i18next",
+        "react-hooks"
     ],
     rules: {
         "react/jsx-indent":[2,4],
@@ -43,6 +45,8 @@ module.exports = {
         "no-unused-vars": 'warn',
         "i18next/no-literal-string": ['error',{markupOnly: true}],
         "max-len":['error',150,{ignoreComments: true}],
+        "react-hooks/rules-of-hooks": "error",
+        "react-hooks/exhaustive-deps": "error"
     },
     globals: {
         '__IS_DEV__': true

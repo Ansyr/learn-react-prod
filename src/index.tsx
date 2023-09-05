@@ -4,7 +4,7 @@ import {BrowserRouter} from "react-router-dom";
 import ThemeProvider from "./app/providers/theme-provider/ui/ThemeProvider";
 import "@/shared/config/i18n/i18n";
 import ErrorBoundary from "@/app/providers/error-boundary/ui/error-boundary";
-
+import "./app/styles/index.scss"
 const root = ReactDOM.createRoot(document.getElementById("root"));
 root.render(
     <BrowserRouter>
